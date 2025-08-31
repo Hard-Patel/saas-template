@@ -7,7 +7,7 @@ import { HeadingText } from "./HeadingText";
 export function WhyUs() {
   return (
     <div className="flex justify-center w-full py-12 min-h-[100vh] bg-teal-900">
-      <div className="h-full w-full flex flex-col justify-center px-8 xl:px-[var(--horizontal-padding)] gap-y-12">
+      <div className="h-full w-full flex flex-col justify-center px-4 sm:px-8 xl:px-[var(--horizontal-padding)] gap-y-12">
         <HeadingText className="xl:text-left text-white">
           Why Choose SaaS?
         </HeadingText>

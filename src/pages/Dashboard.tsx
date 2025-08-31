@@ -17,7 +17,7 @@ export const Dashboard = () => {
 
       <Featured />
 
-      {/* <WhyUs />
+      <WhyUs />
 
       <Pricings />
 
@@ -29,7 +29,7 @@ export const Dashboard = () => {
 
       <Faqs />
 
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

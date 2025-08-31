@@ -8,7 +8,7 @@ type BlogCardProps = {
 
 export const BlogCard: FC<BlogCardProps> = ({ title, date, image }) => {
   return (
-    <div className="overflow-hidden cursor-pointer max-w-md group">
+    <div className="overflow-hidden cursor-pointer min-h-80 xl:min-h-auto group">
       {/* Image Wrapper */}
       <div className="relative rounded-xl w-full h-56 overflow-hidden">
         <img

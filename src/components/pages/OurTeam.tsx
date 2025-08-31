@@ -1,12 +1,11 @@
 import { UserRoundCog } from "lucide-react";
 import { IconLabel } from "../common/IconLabel";
-import { PricingCard } from "../common/PricingCardComponents";
-import { HeadingText } from "./HeadingText";
 import { TeamMemberCard } from "../common/TeamMemberCard";
+import { HeadingText } from "./HeadingText";
 
 export function OurTeam() {
   return (
-    <div className="flex flex-col gap-4 my-16 px-[var(--horizontal-padding)]">
+    <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-center my-2">
         <IconLabel
           label="Our Team"
@@ -20,7 +19,7 @@ export function OurTeam() {
         Behind SaaS
       </HeadingText>
 
-      <div className="grid grid-cols-3 gap-x-6 my-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">
         <TeamMemberCard
           name="John Doe"
           role="CEO & Co-Founder"

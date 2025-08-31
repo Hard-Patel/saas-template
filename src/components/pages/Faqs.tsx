@@ -27,13 +27,9 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <div className="flex flex-col gap-4 my-16 px-[var(--horizontal-padding)]">
+    <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-center my-2">
-        <IconLabel
-          label="Faqs"
-          icon={ComponentIcon}
-          bgColor="bg-green-300"
-        />
+        <IconLabel label="Faqs" icon={ComponentIcon} bgColor="bg-green-300" />
       </div>
 
       <HeadingText>Frequently Asked Questions</HeadingText>

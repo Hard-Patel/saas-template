@@ -1,11 +1,11 @@
 import { Banknote } from "lucide-react";
 import { IconLabel } from "../common/IconLabel";
-import { HeadingText } from "./HeadingText";
 import { PricingCard } from "../common/PricingCardComponents";
+import { HeadingText } from "./HeadingText";
 
 export function Pricings() {
   return (
-    <div className="flex flex-col gap-4 my-16 px-[var(--horizontal-padding)]">
+    <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-center my-2">
         <IconLabel label="Pricing" icon={Banknote} bgColor="bg-green-300" />
       </div>
@@ -15,7 +15,7 @@ export function Pricings() {
         Pricing
       </HeadingText>
 
-      <div className="grid grid-cols-3 gap-x-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-6 my-12">
         <PricingCard
           className="col-span-1"
           title="Free"

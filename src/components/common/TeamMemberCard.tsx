@@ -1,5 +1,5 @@
-import { FC } from "react";
 import { Linkedin } from "lucide-react";
+import { FC } from "react";
 
 type TeamMemberCardProps = {
   name: string;
@@ -23,18 +23,16 @@ export const TeamMemberCard: FC<TeamMemberCardProps> = ({
     >
       {/* Profile image */}
       <div className="w-full overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-full object-cover"
-        />
+        <img src={image} alt={name} className="w-full h-full object-cover" />
       </div>
 
       {/* Info */}
-      <div className="flex items-center justify-between px-5 py-4">
+      <div className="flex items-center justify-between px-5 py-2 sm:py-4">
         <div className="text-left">
-          <h3 className="text-xl font-bold text-black">{name}</h3>
-          <p className="text-[16px] text-gray-800">{role}</p>
+          <h3 className="text-[16px] md:text-xl font-bold text-black">
+            {name}
+          </h3>
+          <p className="text-sm md:text-[16px] text-gray-800">{role}</p>
         </div>
 
         <div className="bg-lime-200 p-2 rounded-full">

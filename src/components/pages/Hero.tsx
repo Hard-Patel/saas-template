@@ -1,4 +1,4 @@
-import { CheckIcon, ChevronRight, EarthIcon } from "lucide-react";
+import { CheckIcon, ChevronRight } from "lucide-react";
 import { motion } from "motion/react";
 import heroBackground from "../../assets/hero-background.svg";
 import heroRight from "../../assets/hero-image.avif";

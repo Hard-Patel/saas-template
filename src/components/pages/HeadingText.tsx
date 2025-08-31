@@ -11,7 +11,7 @@ export const HeadingText: React.FC<HeadingTextProps> = ({
 }) => {
   return (
     <h1
-      className={`text-5xl font-semibold text-black text-center ${className ?? ""}`}
+      className={`text-3xl sm:text-4xl lg:text-5xl font-semibold text-black text-center ${className ?? ""}`}
     >
       {children}
     </h1>

@@ -23,7 +23,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
   return (
     <div
       className={cn(
-        "flex flex-col my-12 rounded-[calc(var(--radius-xl)+theme(spacing.3))] shadow-md bg-white/50 text-black",
+        "flex flex-col rounded-[calc(var(--radius-xl)+theme(spacing.3))] shadow-md bg-white/50 text-black",
         className
       )}
     >
@@ -80,7 +80,10 @@ export const PricingCard: React.FC<PricingCardProps> = ({
       {/* Features */}
       <ul className="mt-6 space-y-2 text-sm px-6 py-4">
         {features.map((feature, idx) => (
-          <li key={idx} className="flex items-center gap-2 text-black text-lg">
+          <li
+            key={idx}
+            className="flex text-left items-center gap-2 text-black text-lg"
+          >
             <Check className="w-4 h-4 text-black" />
             {feature}
           </li>

@@ -21,7 +21,7 @@ export const FAQCollapsible: FC<FAQCollapsibleProps> = ({
         className="flex items-center justify-between px-6 py-4"
         onClick={() => setOpen((prev) => !prev)}
       >
-        <h3 className="text-xl font-medium text-gray-900">{question}</h3>
+        <h3 className="text-left text-xl font-medium text-gray-900">{question}</h3>
         <motion.div
           animate={{ rotate: open ? 45 : 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
