@@ -39,7 +39,7 @@ export default function CollapsibleFeaturesSection() {
   const [openId, setOpenId] = useState<number | null>(1);
 
   return (
-    <div className="w-1/2 space-y-4 px-6">
+    <div className="w-full xl:w-1/2 space-y-4 px-6 pt-8 xl:pt-0">
       {features.map((feature, index) => (
         <div
           key={feature.id}

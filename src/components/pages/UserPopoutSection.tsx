@@ -26,7 +26,7 @@ const icons = [
 
 export default function UserPopoutSection() {
   return (
-    <div className="flex w-1/2 h-full p-4 rounded-[calc(16px+var(--radius-4xl))] bg-green-900 overflow-hidden">
+    <div className="flex w-full xl:w-1/2 h-full p-4 rounded-[calc(16px+var(--radius-4xl))] bg-green-900 overflow-hidden">
       <div className="relative flex justify-center items-end rounded-4xl bg-green-300 h-full w-full overflow-hidden">
         {/* Circling Background */}
         <OrbitingIconRing icons={icons} />

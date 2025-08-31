@@ -17,7 +17,6 @@ export const Hero = () => {
           src="/zuro.avif"
           className="size-21 shadow-xl/40 shadow-black bg-transparent rounded-3xl"
         />
-        {/* </span> */}
         <span className="px-4 md:mx-0 mt-6">
           <p className="text-black text-4xl sm:text-5xl lg:text-6xl font-bold">
             Unlock Your Team's Potential

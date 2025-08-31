@@ -27,11 +27,11 @@ export const ImageCard: React.FC<ImageCardProps> = ({
 }) => {
   return (
     <article
-      className={`w-full max-w-sm rounded-3xl bg-transparent border border-teal-100/10 overflow-hidden ${className}`}
+      className={`w-full rounded-3xl bg-transparent border border-teal-100/10 overflow-hidden ${className}`}
       aria-label={title}
     >
       {/* Top: Image area */}
-      <div className="relative max-h-44 md:h-56">
+      <div className="relative min-h-44 md:h-56">
         {/* image covers the area */}
         <img
           src={imageSrc}
