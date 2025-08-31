@@ -15,12 +15,12 @@ const ITEMS = [
 export function ClientsList() {
   return (
     <div className="flex flex-col">
-      <p className="text-3xl font-medium text-black">
+      <p className="mt-8 text-xl sm:text-2xl md:text-3xl font-medium text-black">
         Trusted by these Companies
       </p>
-      <div className="relative w-[75%] self-center my-12 bg-white rounded-xl">
-        <div className="rounded-xl pointer-events-none absolute left-0 top-0 h-full w-48 bg-gradient-to-r from-white to-transparent z-50" />
-        <div className="rounded-xl pointer-events-none absolute right-0 top-0 h-full w-48 bg-gradient-to-l from-white to-transparent z-50" />
+      <div className="relative w-[85%] xl:w-[75%] self-center my-4 md:my-12 bg-white rounded-xl">
+        <div className="rounded-xl pointer-events-none absolute left-0 top-0 h-full w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-50" />
+        <div className="rounded-xl pointer-events-none absolute right-0 top-0 h-full w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-50" />
 
         <Marquee className="py-6" pauseOnHover speed={48}>
           {[...ITEMS].map((text, i) => {

@@ -14,10 +14,7 @@ export function Featured() {
         />
       </div>
 
-      <HeadingText>
-        Features That Drive <br />
-        Results
-      </HeadingText>
+      <HeadingText className="text-center">Features That Drive Results</HeadingText>
 
       <FeaturesSection />
     </div>
