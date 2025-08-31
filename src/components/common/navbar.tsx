@@ -17,7 +17,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed left-0 w-full z-50 bg-transparent">
-      <div className="flex py-[calc(var(--navbar-y-padding)/2)] backdrop-blur-md xl:backdrop-blur-none xl:pt-[var(--navbar-y-padding)] items-center justify-between relative bg-[#F0F1F5]/30 xl:bg-transparent px-3 md:px-4 sm:px-8">
+      <div className="flex py-[calc(var(--navbar-y-padding)/2)] backdrop-blur-md xl:backdrop-blur-none xl:pt-[var(--navbar-y-padding)] items-center justify-between relative bg-[#F0F1F5]/30 xl:bg-transparent px-3 sm:px-8 md:px-18">
         {/* Left - Logo */}
         <div className="text-3xl xl:text-xl font-bold xl:bg-white rounded-full px-4 py-1">
           <Link to="/">MySaaS</Link>
