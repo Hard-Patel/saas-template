@@ -7,9 +7,12 @@ import {
   Dribbble,
   FileText,
   Instagram,
+  Linkedin,
   Mail,
   PieChart,
   SquaresExclude,
+  Twitter,
+  X,
 } from "lucide-react";
 import { OrbitingIconRing } from "../common/OrbitingIconRing";
 import { HeadingText } from "./HeadingText";
@@ -79,10 +82,21 @@ export function Footer() {
           <div className="col-span-1">
             <h4 className="text-lg font-semibold mb-4">Stay connect</h4>
             <div className="flex space-x-4 text-gray-200">
-              <Mail className="w-5 h-5 cursor-pointer hover:text-white" />
-              <Instagram className="w-5 h-5 cursor-pointer hover:text-white" />
-              <Dribbble className="w-5 h-5 cursor-pointer hover:text-white" />
-              <ContainerIcon className="w-5 h-5 cursor-pointer hover:text-white" />
+              <a target="_blank" href="mailto:hardpatel2602@gmail.com">
+                <Mail className="w-5 h-5 cursor-pointer hover:text-white" />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/hard-patel-b0b508215/"
+              >
+                <Linkedin className="w-5 h-5 cursor-pointer hover:text-white" />
+              </a>
+              <a target="_blank" href="https://x.com/Hardpatel2602">
+                <Twitter className="w-5 h-5 cursor-pointer hover:text-white" />
+              </a>
+              <a target="_blank" href="https://instagram.com/Hardpatel2626">
+                <Instagram className="w-5 h-5 cursor-pointer hover:text-white" />
+              </a>
             </div>
           </div>
         </div>

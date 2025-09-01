@@ -8,11 +8,11 @@ export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
-    { label: "Blog", href: "#blog" },
-    { label: "Faq", href: "#faq" },
-    { label: "Contact Us", href: "#contact" },
+    { label: "Features", href: "/#features" },
+    { label: "Pricing", href: "/#pricing" },
+    { label: "Blog", href: "/blogs" },
+    { label: "Faq", href: "/#faq" },
+    { label: "Contact Us", href: "/contact-us" },
   ];
 
   return (
@@ -25,15 +25,22 @@ export const Navbar = () => {
 
         {/* Desktop - Nav Links */}
         <div className="hidden xl:flex space-x-6 py-3 px-6 rounded-full bg-white text-gray-800 font-medium text-[17px]">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              to={link.href}
-              className="hover:text-gray-500"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isSection =
+              link.href.startsWith("/#") || link.href.startsWith("#");
+
+            return (
+              <button
+                key={link.href}
+                onClick={() => {
+                  window.location.href = link.href;
+                }}
+                className="hover:text-gray-500"
+              >
+                {link.label}
+              </button>
+            );
+          })}
         </div>
 
         {/* Desktop - Button */}

@@ -27,22 +27,24 @@ const faqs = [
 
 export function Faqs() {
   return (
-    <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
-      <div className="flex self-center my-2">
-        <IconLabel label="Faqs" icon={ComponentIcon} bgColor="bg-green-300" />
-      </div>
+    <section id="faq" className="py-16">
+      <div className="flex flex-col gap-4 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
+        <div className="flex self-center my-2">
+          <IconLabel label="Faqs" icon={ComponentIcon} bgColor="bg-green-300" />
+        </div>
 
-      <HeadingText>Frequently Asked Questions</HeadingText>
+        <HeadingText>Frequently Asked Questions</HeadingText>
 
-      <div className="my-12">
-        {faqs.map((faq, idx) => (
-          <FAQCollapsible
-            key={idx}
-            question={faq.question}
-            answer={faq.answer}
-          />
-        ))}
+        <div className="my-12">
+          {faqs.map((faq, idx) => (
+            <FAQCollapsible
+              key={idx}
+              question={faq.question}
+              answer={faq.answer}
+            />
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 }

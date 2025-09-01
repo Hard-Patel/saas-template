@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* index.css */
 .marquee {
   --marquee-duration: 15s; /* normal speed */
