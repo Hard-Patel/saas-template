@@ -30,7 +30,7 @@ export function Faqs() {
     <section id="faq" className="py-16">
       <div className="flex flex-col gap-4 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
         <div className="flex self-center my-2">
-          <IconLabel label="Faqs" icon={ComponentIcon} bgColor="bg-green-300" />
+          <IconLabel label="Faqs" icon={ComponentIcon} />
         </div>
 
         <HeadingText>Frequently Asked Questions</HeadingText>

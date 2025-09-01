@@ -8,7 +8,7 @@ export function Pricings() {
     <section id="pricing" className="py-16">
     <div className="flex flex-col gap-4 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-center my-2">
-        <IconLabel label="Pricing" icon={Banknote} bgColor="bg-green-300" />
+        <IconLabel label="Pricing" icon={Banknote} />
       </div>
 
       <HeadingText>

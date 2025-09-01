@@ -5,9 +5,9 @@ import { HeadingText } from "./HeadingText";
 
 export function BlogsPageSection() {
   return (
-    <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
-      <div className="flex self-start xl:self-center my-2">
-        <IconLabel label="Blog" icon={List} bgColor="bg-green-300" />
+    <div className="flex flex-col gap-4 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
+      <div className="flex self-start xl:self-center">
+        <IconLabel label="Blog" icon={List} />
       </div>
 
       <div className="flex-col justify-center items-center mt-4">

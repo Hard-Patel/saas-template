@@ -19,8 +19,8 @@ export function ClientsList() {
         Trusted by these Companies
       </p>
       <div className="relative w-[85%] xl:w-[75%] self-center my-4 md:my-12 bg-white rounded-xl">
-        <div className="rounded-xl pointer-events-none absolute left-0 top-0 h-full w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-50" />
-        <div className="rounded-xl pointer-events-none absolute right-0 top-0 h-full w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-50" />
+        <div className="rounded-xl pointer-events-none absolute left-0 top-0 h-full w-24 md:w-48 bg-gradient-to-r from-white to-transparent z-2" />
+        <div className="rounded-xl pointer-events-none absolute right-0 top-0 h-full w-24 md:w-48 bg-gradient-to-l from-white to-transparent z-2" />
 
         <Marquee className="py-6" pauseOnHover speed={48}>
           {[...ITEMS].map((text, i) => {

@@ -11,7 +11,6 @@ export function Featured() {
           <IconLabel
             label="Features"
             icon={ComponentIcon}
-            bgColor="bg-green-300"
           />
         </div>
 

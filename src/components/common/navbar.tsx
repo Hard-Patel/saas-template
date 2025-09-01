@@ -44,10 +44,11 @@ export const Navbar = () => {
         </div>
 
         {/* Desktop - Button */}
-        <div className="hidden xl:flex items-center rounded-full bg-gradient-to-b from-white to-[#ECF0F7] text-gray-800 font-semibold shadow-xl/15 shadow-black py-3.5 px-7">
-          Get Template
-          <CreditCard className="size-4 ml-1" />
-        </div>
+        <a target="_blank" href="https://x.com/Hardpatel2602">
+          <div className="hidden xl:flex items-center rounded-full bg-gradient-to-b from-white to-[#ECF0F7] text-gray-800 font-semibold shadow-xl/15 shadow-black py-3.5 px-7">
+            Connect on X{/* <CreditCard className="size-4 ml-1" /> */}
+          </div>
+        </a>
 
         {/* Mobile - Menu Icon */}
         <button
@@ -82,8 +83,7 @@ export const Navbar = () => {
 
               {/* Button inside menu */}
               <button className="w-full flex items-center justify-center rounded-full bg-gradient-to-b from-white to-[#ECF0F7] text-gray-800 font-semibold shadow-md py-3">
-                Get Template
-                <CreditCard className="size-4 ml-1" />
+                Connect on X{/* <CreditCard className="size-4 ml-1" /> */}
               </button>
             </div>
           </motion.div>

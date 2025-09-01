@@ -86,8 +86,8 @@ export const CustomerReviews = () => {
         </div>
 
         <div className="relative flex xl:hidden overflow-hidden mt-12">
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-32 md:w-48 bg-gradient-to-r from-teal-900 to-transparent z-50" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 md:w-48 bg-gradient-to-l from-teal-900 to-transparent z-50" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-32 md:w-48 bg-gradient-to-r from-teal-900 to-transparent z-2" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-32 md:w-48 bg-gradient-to-l from-teal-900 to-transparent z-2" />
 
           <Marquee className="w-full">
             {reviews.map((review, i) => (
@@ -119,8 +119,8 @@ export const CustomerReviews = () => {
         </div>
 
         <div className="relative flex xl:hidden overflow-hidden mt-4">
-          <div className="pointer-events-none absolute left-0 top-0 h-full w-18 sm:w-32 md:w-48 bg-gradient-to-r from-teal-900 to-transparent z-50" />
-          <div className="pointer-events-none absolute right-0 top-0 h-full w-18 sm:w-32 md:w-48 bg-gradient-to-l from-teal-900 to-transparent z-50" />
+          <div className="pointer-events-none absolute left-0 top-0 h-full w-18 sm:w-32 md:w-48 bg-gradient-to-r from-teal-900 to-transparent z-2" />
+          <div className="pointer-events-none absolute right-0 top-0 h-full w-18 sm:w-32 md:w-48 bg-gradient-to-l from-teal-900 to-transparent z-2" />
 
           <Marquee className="w-full" direction="right">
             {reviews.map((review, i) => (

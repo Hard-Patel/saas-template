@@ -10,7 +10,6 @@ export function OurTeam() {
         <IconLabel
           label="Our Team"
           icon={UserRoundCog}
-          bgColor="bg-green-300"
         />
       </div>
 

@@ -1,4 +1,4 @@
-import { CheckIcon, ChevronRight } from "lucide-react";
+import { CheckIcon, ChevronRight, EarthIcon } from "lucide-react";
 import { motion } from "motion/react";
 import heroBackground from "../../assets/hero-background.svg";
 import heroRight from "../../assets/hero-image.avif";
@@ -28,7 +28,7 @@ export const Hero = () => {
           </p>
         </span>
 
-        <div className="flex w-full md:w-auto px-8 md:px-0 flex-col md:flex-row space-x-3 space-y-3 mt-4">
+        <div className="flex w-full md:w-auto px-8 md:px-0 flex-col md:flex-row md:space-x-3 md:space-y-0 space-y-3 mt-4">
           <button className="flex items-center justify-center py-3 px-5 text-lg text-white space-x-1 rounded-full bg-[#1B7564]">
             Get this Template
             <ChevronRight className="size-6 ml-1" />
@@ -36,7 +36,7 @@ export const Hero = () => {
 
           <button className="flex items-center justify-center py-3 px-5 text-lg text-gray-800 space-x-1 rounded-full hover:bg-[#9b9f9e] border-[#9b9f9e] border">
             Book a Demo
-            {/* <EarthIcon className="size-4 ml-1.5" /> */}
+            <EarthIcon className="size-4 ml-1.5" />
           </button>
         </div>
 
@@ -67,7 +67,7 @@ export const Hero = () => {
           className="relative xl:absolute rounded-2xl xl:top-1/2 xl:-translate-y-1/2 xl:shadow-xl/30 xl:shadow-black"
         >
           <img src={heroRight} />
-          <div className="xl:hidden rounded-xl pointer-events-none absolute bottom-0 w-full h-48 bg-gradient-to-t from-white to-transparent z-50" />
+          <div className="xl:hidden rounded-xl pointer-events-none absolute bottom-0 w-full h-48 bg-gradient-to-t from-white to-transparent z-2" />
         </motion.div>
       </div>
 
@@ -79,7 +79,7 @@ export const Hero = () => {
           className="relative xl:absolute rounded-2xl xl:top-1/2 xl:-translate-y-1/2 xl:shadow-xl/30 xl:shadow-black"
         >
           <img src={heroRight} />
-          <div className="xl:hidden rounded-xl pointer-events-none absolute bottom-0 w-full h-48 bg-gradient-to-t from-white to-transparent z-50" />
+          <div className="xl:hidden rounded-xl pointer-events-none absolute bottom-0 w-full h-48 bg-gradient-to-t from-white to-transparent z-2" />
         </motion.div>
       </div>
     </div>

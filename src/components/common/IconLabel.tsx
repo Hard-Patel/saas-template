@@ -9,7 +9,7 @@ interface IconLabelProps {
 export const IconLabel: React.FC<IconLabelProps> = ({
   icon: Icon = Grid,
   label,
-  bgColor = "bg-teal-300",
+  bgColor = "bg-emerald-400",
 }) => {
   return (
     <div className="flex items-center gap-3 rounded-full bg-white p-2 shadow-sm">

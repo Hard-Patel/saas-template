@@ -7,7 +7,7 @@ export function Blogs() {
   return (
     <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-start xl:self-center my-2">
-        <IconLabel label="Blog" icon={List} bgColor="bg-green-300" />
+        <IconLabel label="Blog" icon={List} />
       </div>
 
       <div className="flex items-center justify-between mt-4">
