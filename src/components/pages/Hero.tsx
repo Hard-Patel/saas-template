@@ -5,6 +5,10 @@ import heroRight from "../../assets/hero-image.avif";
 import { TextReveal } from "../common/RevealText";
 
 export const Hero = () => {
+  const handleRedirect = () => {
+    window.open("https://hard-patel.netlify.app", "_blank");
+  };
+
   return (
     <div className="flex flex-col xl:flex-row md:pl-8 xl:pl-22">
       {/* Background Image */}
@@ -28,12 +32,18 @@ export const Hero = () => {
         </span>
 
         <div className="flex w-full md:w-auto px-8 md:px-0 flex-col md:flex-row md:space-x-3 md:space-y-0 space-y-3 mt-4">
-          <button className="flex items-center justify-center py-3 px-5 text-lg text-white space-x-1 rounded-full bg-[#1B7564]">
+          <button
+            className="flex items-center justify-center py-3 px-5 text-lg text-white space-x-1 rounded-full bg-[#1B7564]"
+            onClick={handleRedirect}
+          >
             Get this Template
             <ChevronRight className="size-6 ml-1" />
           </button>
 
-          <button className="flex items-center justify-center py-3 px-5 text-lg text-gray-800 space-x-1 rounded-full hover:bg-[#9b9f9e] border-[#9b9f9e] border">
+          <button
+            className="flex items-center justify-center py-3 px-5 text-lg text-gray-800 space-x-1 rounded-full hover:bg-[#9b9f9e] border-[#9b9f9e] border"
+            onClick={handleRedirect}
+          >
             Book a Demo
             <EarthIcon className="size-4 ml-1.5" />
           </button>

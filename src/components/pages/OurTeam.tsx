@@ -15,7 +15,7 @@ export function OurTeam() {
 
       <HeadingText>
         Meet the People <br />
-        Behind SaaS
+        Behind Zuro
       </HeadingText>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-12">

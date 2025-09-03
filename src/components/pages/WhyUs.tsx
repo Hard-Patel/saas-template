@@ -9,7 +9,7 @@ export function WhyUs() {
     <div className="flex justify-center w-full py-12 min-h-[100vh] bg-teal-900">
       <div className="h-full w-full flex flex-col justify-center px-4 sm:px-8 xl:px-[var(--horizontal-padding)] gap-y-12">
         <HeadingText className="xl:text-left text-white">
-          Why Choose SaaS?
+          Why Choose Zuro?
         </HeadingText>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-8 text-left items-center">

@@ -102,7 +102,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col px-3 md:px-6 py-4">
-          <HeadingText className="text-white text-left">SaaS</HeadingText>
+          <HeadingText className="text-white text-left">Zuro</HeadingText>
           <div className="flex flex-col md:flex-row items-center justify-between text-left gap-y-8">
             <p className="mt-2 text-lg text-white/70">
               At Zuro, we believe in empowering teams of all sizes with
