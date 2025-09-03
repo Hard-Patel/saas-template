@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { TextReveal } from "../common/RevealText";
 
 interface Feature {
   id: number;
@@ -57,9 +58,14 @@ export default function CollapsibleFeaturesSection() {
             </h3>
           </div>
           {openId === feature.id && (
-            <p className="mt-2 text-gray-600 text-lg text-left">
-              {feature.description}
-            </p>
+            <TextReveal
+              text={[feature.description]}
+              duration={5}
+              textClassName="mt-2 text-gray-600 text-lg text-left"
+            />
+            // <p className="mt-2 text-gray-600 text-lg text-left">
+            //   {feature.description}
+            // </p>
           )}
         </div>
       ))}

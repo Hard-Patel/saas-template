@@ -2,6 +2,7 @@ import { CheckIcon, ChevronRight, EarthIcon } from "lucide-react";
 import { motion } from "motion/react";
 import heroBackground from "../../assets/hero-background.svg";
 import heroRight from "../../assets/hero-image.avif";
+import { TextReveal } from "../common/RevealText";
 
 export const Hero = () => {
   return (
@@ -17,10 +18,8 @@ export const Hero = () => {
           src="/zuro.avif"
           className="size-21 shadow-xl/40 shadow-black bg-transparent rounded-3xl"
         />
-        <span className="px-4 md:mx-0 mt-6">
-          <p className="text-black text-4xl sm:text-5xl lg:text-6xl font-bold">
-            Unlock Your Team's Potential
-          </p>
+        <span className="md:mx-0">
+          <TextReveal textClassName="text-black text-4xl sm:text-5xl lg:text-6xl font-bold" />
 
           <p className="mt-4 text-[##000000B3] text-wrap text-lg md:text-xl">
             Automate complex workflows and increase productivity in
