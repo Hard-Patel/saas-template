@@ -58,14 +58,9 @@ export default function CollapsibleFeaturesSection() {
             </h3>
           </div>
           {openId === feature.id && (
-            <TextReveal
-              text={[feature.description]}
-              duration={5}
-              textClassName="mt-2 text-gray-600 text-lg text-left"
-            />
-            // <p className="mt-2 text-gray-600 text-lg text-left">
-            //   {feature.description}
-            // </p>
+            <p className="mt-2 text-gray-600 text-lg text-left">
+              {feature.description}
+            </p>
           )}
         </div>
       ))}

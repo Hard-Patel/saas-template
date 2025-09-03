@@ -23,7 +23,10 @@ export const Navbar = () => {
         {/* Left - Logo */}
         <div
           className="text-3xl xl:text-xl font-bold xl:bg-white rounded-full px-4 py-2"
-          onClick={() => navigate("/")}
+          onClick={() => {
+            setMenuOpen(false);
+            navigate("/");
+          }}
         >
           <img src={logo} />
         </div>

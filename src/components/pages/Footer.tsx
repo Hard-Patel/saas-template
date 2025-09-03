@@ -30,7 +30,7 @@ const icons = [
 
 export function Footer() {
   return (
-    <div className="px-4 sm:px-8 xl:px-[var(--horizontal-padding)] flex justify-center pb-12">
+    <div className="px-4 sm:px-8 xl:px-[var(--horizontal-padding)] flex-col justify-center pb-12">
       <div className="h-full w-full p-4 pb-12 flex flex-col rounded-3xl bg-teal-900 justify-center gap-y-12 text-white">
         {/* Newsletter & Orbiting Icons Section */}
         <div className="flex justify-between w-full bg-green-300 rounded-2xl overflow-hidden text-black">
@@ -113,6 +113,31 @@ export function Footer() {
               © 2025 Zuro. All Rights Reserved.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div className="h-full w-full p-4 mt-8 flex flex-col rounded-3xl bg-teal-900 justify-center gap-y-12 text-white">
+        <div className="gap-y-4 flex flex-col sm:flex-row justify-between items-center px-3 md:px-6 py-4">
+          <p>
+            Made with ♥️ by{"  "}
+            <a
+              target="_blank"
+              href="https://hard-patel.netlify.app"
+              className="underline font-medium"
+            >
+              Hard Patel
+            </a>
+          </p>
+          <p>
+            Inspired & Original Credit:{" "}
+            <a
+              target="_blank"
+              href="https://hosseinfathi.net/"
+              className="underline font-medium"
+            >
+              Hossein Fathi
+            </a>
+          </p>
         </div>
       </div>
     </div>
