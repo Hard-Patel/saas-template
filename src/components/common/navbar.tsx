@@ -1,10 +1,12 @@
 // src/components/Navbar.tsx
 import { AnimatePresence, motion } from "framer-motion";
-import { CreditCard, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import logo from "../../assets/logo.svg";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navLinks = [
@@ -19,8 +21,11 @@ export const Navbar = () => {
     <nav className="fixed left-0 w-full z-50 bg-transparent">
       <div className="flex py-[calc(var(--navbar-y-padding)/2)] backdrop-blur-md xl:backdrop-blur-none xl:pt-[var(--navbar-y-padding)] items-center justify-between relative bg-[#F0F1F5]/30 xl:bg-transparent px-3 sm:px-8 md:px-18">
         {/* Left - Logo */}
-        <div className="text-3xl xl:text-xl font-bold xl:bg-white rounded-full px-4 py-1">
-          <Link to="/">MySaaS</Link>
+        <div
+          className="text-3xl xl:text-xl font-bold xl:bg-white rounded-full px-4 py-2"
+          onClick={() => navigate("/")}
+        >
+          <img src={logo} />
         </div>
 
         {/* Desktop - Nav Links */}
