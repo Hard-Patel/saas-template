@@ -10,6 +10,8 @@ function ScrollToHash() {
       if (el) {
         el.scrollIntoView({ behavior: "smooth" });
       }
+    } else {
+      window.scrollTo({ top: 0 });
     }
   }, [hash]);
 

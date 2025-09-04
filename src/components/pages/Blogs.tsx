@@ -2,8 +2,10 @@ import { List } from "lucide-react";
 import { BlogCard } from "../common/BlogCard";
 import { IconLabel } from "../common/IconLabel";
 import { HeadingText } from "./HeadingText";
+import { useNavigate } from "react-router-dom";
 
 export function Blogs() {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col gap-4 my-16 px-4 sm:px-8 xl:px-[var(--horizontal-padding)]">
       <div className="flex self-start xl:self-center my-2">
@@ -12,7 +14,10 @@ export function Blogs() {
 
       <div className="flex items-center justify-between mt-4">
         <HeadingText className="text-left">Latest Blogs & Insights</HeadingText>
-        <button className="flex items-center py-2 px-2 sm:py-3 sm:px-4 text-sm sm:text-lg text-gray-800 space-x-1 rounded-full hover:bg-[#e0e0e0] hover:outline-0 outline-[#9b9f9e] outline">
+        <button
+          className="flex items-center py-2 px-2 sm:py-3 sm:px-4 text-sm sm:text-lg text-gray-800 space-x-1 rounded-full hover:bg-[#e0e0e0] hover:outline-0 outline-[#9b9f9e] outline"
+          onClick={() => navigate("/blogs")}
+        >
           See All Blogs
         </button>
       </div>
