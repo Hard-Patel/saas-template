@@ -90,9 +90,11 @@ export const Navbar = () => {
               ))}
 
               {/* Button inside menu */}
-              <button className="w-full flex items-center justify-center rounded-full bg-gradient-to-b from-white to-[#ECF0F7] text-gray-800 font-semibold shadow-md py-3">
-                Connect on X{/* <CreditCard className="size-4 ml-1" /> */}
-              </button>
+              <a target="_blank" href="https://x.com/Hardpatel2602">
+                <button className="w-full flex items-center justify-center rounded-full bg-gradient-to-b from-white to-[#ECF0F7] text-gray-800 font-semibold shadow-md py-3">
+                  Connect on X{/* <CreditCard className="size-4 ml-1" /> */}
+                </button>
+              </a>
             </div>
           </motion.div>
         )}
